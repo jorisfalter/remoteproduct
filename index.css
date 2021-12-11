@@ -1,0 +1,237 @@
+/*******************************TAG SELECTORS*****************************/
+
+/* https://colorhunt.co/palette/2c2e43595260b2b1b9ffd523 */
+
+h1 {
+  color: #595260;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+.headers h2 {
+  color: #595260;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+
+
+
+p {
+
+}
+
+body{
+  margin:0;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  border-style:hidden;
+}
+
+img {
+  max-width: 100vw;
+}
+
+div.trim{
+  overflow-y:hidden;
+  max-width: 100vw;
+  max-height: 480px;
+}
+
+/*******************************CLASS SELECTORS*****************************/
+.tag-filter {
+  display: inline-block;
+  min-width:50px;
+  /* background-color: red; */
+  background-color: #FFD523;
+  /* color: white; */
+  color: #2C2E43;
+  text-align:center;
+  border-radius: 5px;
+}
+
+.tag-filter h3 {
+  margin: 3px;
+}
+
+.tags {
+  margin:8px;
+}
+
+.top-container{
+}
+
+.headers{
+  position:absolute;
+  left:20vw;
+  top: 30px;
+}
+
+.add-company{
+  position:absolute;
+  left: 70vw;
+  top: 51px;
+  background:white;
+  border-color:blue;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.join-community{
+  position:absolute;
+  left: 70vw;
+  top: 121px;
+  background:white;
+  border-color:blue;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.middle-container{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px 300px;
+  gap: 30px;
+  margin:8px;
+  justify-content: center;
+}
+
+.middle-container:hover{
+
+}
+
+@media (max-width: 1300px) {
+  .middle-container{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    gap: 30px;
+  }
+  div.trim{
+    overflow-y:hidden;
+    max-width: 100vw;
+    max-height: 400px;
+
+  }
+}
+
+@media (max-width: 1000px) {
+  .middle-container{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    gap: 30px;
+  }
+  div.trim{
+    overflow-y:hidden;
+    max-width: 100vw;
+    max-height: 300px;
+
+  }
+}
+
+@media (max-width: 630px) {
+  .middle-container{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+    gap: 30px;
+  }
+  div.trim{
+    overflow-y:hidden;
+    max-width: 100vw;
+    max-height: 210px;
+
+  }
+}
+
+.company{
+  background-color: #2C2E43; /* green */
+  border-radius:20px;
+  text-align:center;
+  position:relative;
+  overflow: hidden;
+}
+
+.stickerIcon{
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  margin: auto;
+}
+.stickerIcon:hover{
+  display:none;
+}
+
+.hover-company{
+  display:none;
+}
+
+.company:hover{
+   background-color:#595260;
+   cursor: pointer;
+}
+
+.company:hover .hover-company{
+  display:block;
+  text-align:left;
+  padding:20px 0 0 20px;
+
+}
+
+.company h2 {
+  /* color:purple; */
+  font-size: 2em;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: #B2B1B9;
+  padding: 100px 0 0 0;
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align:center;
+}
+
+.company:hover h2 {
+  display:none;
+}
+
+.company-categories {
+  /* position:absolute; */
+  margin-left:20px;
+  font-size:0.9em;
+  width: 90px;
+  max-width: 90px;
+  display:inline-block
+}
+
+.hover-company #slogan{
+  color: #FFD523;
+  font-weight: bold;
+  text-align:center;
+  padding-right: 20px;
+}
+
+.fas{
+  color: #FFD523;
+  max-width: 15px;
+}
+
+.company-categories-answers {
+  /* position:absolute; */
+  /* margin-left:100px; */
+  color: #FFD523;
+}
+
+/*******************************Company Pages*****************************/
+.companyContent{
+}

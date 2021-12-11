@@ -1,0 +1,96 @@
+/*******************************TAG SELECTORS*****************************/
+
+
+h1 {
+
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  border-style:hidden;
+}
+
+img {
+
+}
+
+/*******************************CLASS SELECTORS*****************************/
+.tag-filter {
+  display: inline-block;
+  min-width:50px;
+  background-color: red;
+  color: white;
+  text-align:center;
+  border-radius: 5px;
+}
+
+.tag-filter h3 {
+  margin: 3px;
+}
+
+.middle-container{
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+  gap: 30px;
+}
+
+.@
+
+.company{
+  background-color: green;
+  border-radius:20px;
+  text-align:center;
+}
+
+.hover-company{
+  display:none;
+}
+
+.company:hover{
+  background-color:yellow;
+}
+
+.company:hover .hover-company{
+  display:block;
+  text-align:left;
+  padding:80px 0 0 20px;
+
+}
+
+.company h2 {
+  color:purple;
+  padding: 100px 0 0 0;
+}
+
+.company:hover h2 {
+  display:none;
+}
+
+.company-categories {
+  position:absolute;
+  left:55px;
+  font-size:0.9em;
+}
+
+.fas{
+  color:blue;
+}
+
+.company-categories-answers {
+  position:absolute;
+  left:150px;
+  color:blue;
+
+}
