@@ -9,6 +9,27 @@ window.addEventListener("load", function(){
   // } else {
   //   alert("Not mobile device");
   // }
+
+  // Make the tiles clickable
+  var clickedCompanies = [];
+  var clickedCompaniesLength;
+  $(".company").click(function(){
+      if (isMobile){
+        var selectedCompany = $(this).attr("id");
+
+        // to figure out if a company has been double clicked
+        clickedCompanies.push(selectedCompany);
+        clickedCompaniesLength = clickedCompanies.length;
+        if (clickedCompaniesLength != 1){
+          if (clickedCompanies[clickedCompaniesLength-1] == clickedCompanies[clickedCompaniesLength-2]){
+            window.location.href = "companyPages/" + selectedCompany + ".html";
+          }
+        }
+
+      } else {
+        window.location.href = "companyPages/" + selectedCompany + ".html";
+      }
+  })
 });
 
 // display second header after 5 seconds
@@ -33,18 +54,3 @@ change(); // to make sure it loads when the page loads
 window.onload = function () {
     setInterval(change, 6000);
 };
-
-// Make the tiles clickable
-$(".company").click(function(){
-    // if (isMobile){
-    //   var element = document.getElementById('toggleTrack');
-    //   element.classList.add("hover-company");
-    //   alert("Mobile device");
-    //
-    // } else {
-      var selectedCompany = $(this).attr("id");
-      window.location.href = "companyPages/" + selectedCompany + ".html";
-    //   alert("Not mobile device");
-    // }
-
-})
