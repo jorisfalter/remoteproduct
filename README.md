@@ -4,3 +4,5 @@ This project is a jobboard of awesome companies. I've built it when I reconsider
 
 ## Technology
 This jobboard is built from scratch in HTML, CSS, JS.
+
+It's stored on Github, and only available on the Github pages link: https://jorisfalter.github.io/remoteproduct/
